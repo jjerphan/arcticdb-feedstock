@@ -55,6 +55,9 @@ requirements:
     - recycle
     - lmdb ==0.9.22
     - lmdbxx ==0.9.14
+    - libarrow
+    - libiconv
+    - aws-c-s3
     - fmt
     - glog
     - gtest
