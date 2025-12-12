@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/man-group/ArcticDB/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: cdd35efd5662fea77a1721af176fdf9029cf66f53245bf6999da3c457d338f3c
+  url: https://github.com/man-group/ArcticDB/archive/refs/heads/master.tar.gz
+  sha256: 4e54e5dec1e581187ad5b6136138daa6970219e21e9b50d94fc242bbbeb49bda
 
 build:
   skip: true  # [win and py>=314]
