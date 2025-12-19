@@ -137,8 +137,8 @@ test:
     - mock
     - trustme
     - psutil
-    - memray
-    - pytest-memray
+    - memray                      # [unix]
+    - pytest-memray               # [unix]
     - retrying
   # Extra dependencies
     - pytest-rerunfailures
