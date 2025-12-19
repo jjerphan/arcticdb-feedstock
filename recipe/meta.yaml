@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/man-group/ArcticDB/archive/refs/heads/master.tar.gz
-  sha256: 4e54e5dec1e581187ad5b6136138daa6970219e21e9b50d94fc242bbbeb49bda
+  sha256: 4e1a8e356e9398e622c924bbb72ab879813907c876deeb7f63927b0e740e8c0c
 
 build:
   skip: true  # [win and py>=314]
