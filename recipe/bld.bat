@@ -1,7 +1,11 @@
 @echo off
 setlocal EnableDelayedExpansion
 
-:: Necessary so that it can build with Ninja
+:: Some `CMAKE_*` variables (in particular CMAKE_GENERATOR_{PLATFORM,TOOLSET})
+:: are set by mamba / micromamba / conda when the environment is activated.
+:: See: https://github.com/conda-forge/vc-feedstock/blob/c6bb71096319ff21ac8b75f7d91183be914c3d6b/recipe/activate.bat#L87-L131
+:: The values which are chosen prevent Ninja to be used as a generator with MSVC.
+:: We override those values so that we can.
 set CMAKE_GENERATOR_PLATFORM=
 set CMAKE_GENERATOR_TOOLSET=
 
