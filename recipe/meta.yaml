@@ -62,7 +62,7 @@ requirements:
     - pcre2
     - gflags
     - msgpack-c
-    - aws-sdk-cpp >=1.11.405,<=1.11.591
+    - aws-sdk-cpp
     - azure-core-cpp
     - azure-identity-cpp
     - azure-storage-blobs-cpp
@@ -134,8 +134,8 @@ test:
     # Memray and pytest-memray are not available on Windows, so we skip them for now.
     - memray                          # [unix]
     - pytest-memray                   # [unix]
-    # PyArrow constraints the environment too much on Windows, so we skip it for now.
-    - pyarrow                         # [unix]
+    # PyArrow cannot be installed with the pinned version of aws-sdk-cpp, so we skip it for now.
+    # - pyarrow
   # Extra dependencies
     - pytest-rerunfailures
     - nodejs  # for npm
